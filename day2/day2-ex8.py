@@ -7,4 +7,11 @@ for line in open('C:\\Users\\Admin\\Labs_DC\\Python3_labs\\labs\\messier.txt', e
     if not line:
         break
     if line.startswith('M'):
-        print(line)
+        mnumber = line[:6].rstrip()
+        comname = line[6:40].rstrip()
+        if not comname:
+            comname = 'no name'
+        otype = line[40:64].rstrip()
+        oconst = line[64:].rstrip()
+        print(f"|{mnumber}|{comname}|{otype}|{oconst}")
+
