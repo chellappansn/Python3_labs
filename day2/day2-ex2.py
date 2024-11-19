@@ -15,6 +15,8 @@ attempts = 0
 while pin != master_pin and attempts < 3:
     # read pin in plain text
     #pin = input("Enter PIN:")
+
+    # read pin in masked letters
     pin = getpass.getpass("Enter PIN:")
 
     if pin == master_pin:
