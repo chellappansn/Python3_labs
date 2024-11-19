@@ -25,5 +25,5 @@ print (pattern)
 for fname in glob.glob(pattern):
     size = os.path.getsize(fname)
     if size > 0:
-        print(os.path.basename(fname), size/1024, "MB")
+        print(os.path.basename(fname), size/1024 + "MB")
 
