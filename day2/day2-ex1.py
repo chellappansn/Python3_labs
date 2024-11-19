@@ -4,13 +4,13 @@
 # Description: Lotto
 
 """
-   Docstring
+   Random generate lotto number
 """
 
 import random
 lotto = []
 
-while len(lotto) < 6:
+while len(lotto) < 10:
     num = random.randint(1,50)
     if num not in lotto:
         lotto.append(num)
@@ -18,3 +18,9 @@ while len(lotto) < 6:
         print("Duplicate number: ", num)
 
 print("Lotto number", lotto)
+
+if 5 in lotto:
+    print ("Five exists")
+else:
+    print("Five does not exists")
+
