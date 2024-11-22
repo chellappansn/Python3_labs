@@ -12,5 +12,3 @@ def frange (start, stop, step=0.25):
 
 for num in frange (1,10):
     print(num)
-
-for
